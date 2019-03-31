@@ -83,7 +83,13 @@ using namespace std;
 class Solution {
 public:
     int romanToInt(string s) {
-        
+        return 0;
     }
 };
+int main(){
+    Solution sol;
+    string s="MCMXCIV";
+    cout<<sol.romanToInt(s)<<endl;
+    return 0;
+}
 
