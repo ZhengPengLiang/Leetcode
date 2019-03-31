@@ -77,10 +77,10 @@
  * Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
  * 
  */
-// #include<iostream>
-// #include<string.h>
-// #include<unordered_map>
-// using namespace std;
+#include<iostream>
+#include<string.h>
+#include<unordered_map>
+using namespace std;
 class Solution {
 public:
     int romanToInt(string s) {
@@ -104,10 +104,10 @@ public:
         return sum;
     }
 };
-// int main(){
-//     Solution sol;
-//     string s="MCMXCIV";
-//     cout<<sol.romanToInt(s)<<endl;
-//     return 0;
-// }
+int main(){
+    Solution sol;
+    string s="MCMXCIV";
+    cout<<sol.romanToInt(s)<<endl;
+    return 0;
+}
 
