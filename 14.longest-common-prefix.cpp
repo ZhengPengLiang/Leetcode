@@ -36,10 +36,10 @@
  * All given inputs are in lowercase letters a-z.
  * 
  */
-// #include<iostream>
-// #include<string>
-// #include<vector>
-// using namespace std;
+#include<iostream>
+#include<string>
+#include<vector>
+using namespace std;
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
@@ -61,13 +61,13 @@ public:
     }
    
 };
-// int main(){
-//     vector<string> st;
-//     st.push_back("flower");
-//     st.push_back("flow");
-//     st.push_back("flight");
-//     Solution sol;
-//     cout<<sol.longestCommonPrefix(st)<<endl;
+int main(){
+    vector<string> st;
+    st.push_back("flower");
+    st.push_back("flow");
+    st.push_back("flight");
+    Solution sol;
+    cout<<sol.longestCommonPrefix(st)<<endl;
 
-// }
+}
 
