@@ -87,16 +87,21 @@ public:
         if(s.empty()){
             return 0;
         }
-        unordered_map<char,int> mp={
-            {'I',1},
-            {'V',5},
-            {'X',10},
-            {'L',50},
-            {'C',100},
-            {'D',500},
-            {'M',1000}
-            };
-        //mp.insert({{'I',1},{'V',5},{'X',10},{'L',50},{'C',100},{'D',500}, {'M',1000}});
+        unordered_map<char,int> mp;
+        // mp['I']=1;
+        // mp['V']=5;
+        // mp['X']=10;
+        // mp['L']=50;
+        // mp['C']=100;
+        // mp['D']=500;
+        // mp['M']=1000;
+        mp.insert(make_pair('I',1));
+        mp.insert(make_pair('V',5));
+        mp.insert(make_pair('X',10));
+        mp.insert(make_pair('L',50));
+        mp.insert(make_pair('C',100));
+        mp.insert(make_pair('D',500));
+        mp.insert(make_pair('M',1000));
         int sum=mp[s.back()];
         for(int i=s.size()-2;i>=0;i--){
             sum+=mp[s[i]]>=mp[s[i+1]]?mp[s[i]] : -mp[s[i]];
