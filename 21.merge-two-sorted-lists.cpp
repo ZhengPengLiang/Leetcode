@@ -39,7 +39,7 @@ struct ListNode {
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
-        if ((!l1 || l2) && (l1->val > l2->val)){
+        if (!l1 || (l2 && l1->val > l2->val)){
             swap(l1, l2);
         } 
         if (l1){
