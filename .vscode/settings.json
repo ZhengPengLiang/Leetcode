@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "unordered_map": "cpp",
+        "iostream": "cpp",
+        "stack": "cpp",
+        "type_traits": "cpp",
+        "string": "cpp"
+    },
+    "editor.fontSize": 16
+}
